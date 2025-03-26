@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(238, 196, 145);
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  display: flex;
+  min-height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: coral;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav .links {
+  font-weight: 600;
+}
+
+nav a:not(:last-child) {
+  padding-right: 10px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav .browser,
+.links {
+  padding-right: 20px;
+}
+
+nav input {
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
