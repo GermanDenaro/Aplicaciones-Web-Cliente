@@ -8,21 +8,78 @@
   </head>
   <body>
     <header>
-      <div class="name">
-        <h2>Aplicaciones Web Cliente</h2>
+      <div class="logo">
+        <img class="tech_logo" src="/Images/logo2.png" alt="" />
+        <h1 class="name">TECHSTORE</h1>
       </div>
       <nav>
         <div class="browser">
           <input placeholder="Buscar" type="text" />
+          <img class="browse_icon" src="/Images/browse_icon.svg" alt="Buscar" />
         </div>
         <div class="links">
           <a href="" class="nav-link">Inicio</a>
-          <a href="" class="nav-link">Quienes Somos</a>
+          <a href="" class="nav-link">Nosotros</a>
           <a href="" class="nav-link">Contacto</a>
         </div>
       </nav>
     </header>
     <main>
+      <input type="checkbox" id="toggleFilters" hidden />
+      <img class="filter_icon" src="/Images/filter_icon.svg" alt="" />
+      <div class="filters-panel">
+        <aside class="filters">
+          <h3>Filtros</h3>
+          <hr />
+          <div class="filter-group">
+            <h4>Tipo</h4>
+            <div class="filter-option">
+              <input type="checkbox" id="samsung" name="brand" />
+              <label for="monitores">Monitores</label>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="lg" name="brand" />
+              <label for="teclados">Teclados</label>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="samsung" name="brand" />
+              <label for="Ratones">Ratones</label>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="samsung" name="brand" />
+              <label for="gabinetes">Gabinetes</label>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="samsung" name="brand" />
+              <label for="procesadores">Procesadores</label>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="samsung" name="brand" />
+              <label for="video">Placas de Video</label>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="samsung" name="brand" />
+              <label for="ram">Memorias Ram</label>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="samsung" name="brand" />
+              <label for="almacenamiento">Almacenamiento</label>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h4>Precio</h4>
+            <div class="filter-option">
+              <input type="checkbox" id="price1" name="price" />
+              <label for="price1">$0 - $200</label>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="price2" name="price" />
+              <label for="price2">$201 - $400</label>
+            </div>
+          </div>
+        </aside>
+      </div>
       <section class="products">
         <article class="product">
           <img src="/Images/Monitor.webp" alt="Monitor" />
@@ -115,15 +172,15 @@
           </div>
         </div>
         <div class="footer-content-center">
-          <h2>COMPANY</h2>
+          <h2>COMPAÑIA</h2>
           <ul>
             <li>Home</li>
-            <li>About Us</li>
+            <li>Nosotros</li>
             <li>Privacy Policy</li>
           </ul>
         </div>
         <div class="footer-content-right">
-          <h2>GET IN TOUCH</h2>
+          <h2>CONTACTO</h2>
           <ul>
             <li>+5491123456789</li>
             <li>examen@examen.com</li>
