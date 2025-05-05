@@ -1,0 +1,232 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(238, 196, 145, 0.7);
+  margin: 0;
+}
+
+main {
+  margin: 0 20px;
+  display: flex;
+  gap: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: rgb(255, 127, 80);
+  gap: 20px; */
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(255, 127, 80);
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  color: #49557e;
+  font-size: 18px;
+}
+
+.ham_menu {
+  display: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav .links {
+  font-weight: 600;
+}
+
+nav a:not(:last-child) {
+  padding-right: 10px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav .browser,
+.links {
+  padding-right: 20px;
+}
+
+nav input {
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+
+/* .logo {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  align-items: center;
+} */
+
+/* .logo .playtech_logo {
+  max-width: 12%;
+} */
+
+.footer {
+  color: #d9d9d9;
+  background-color: #323232;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 1rem 8vw;
+  padding-top: 2rem;
+}
+
+.footer-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 80px;
+}
+
+.footer-content-left,
+.footer-content-center,
+.footer-content-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-content-left ul,
+.footer-content-center ul,
+.footer-content-right ul {
+  padding: 0;
+}
+
+.footer-content-left li,
+.footer-content-center li,
+.footer-content-right li {
+  list-style: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer-content-center h2,
+.footer-content-right h2 {
+  color: white;
+}
+
+.footer-social-icons img {
+  width: 40px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.footer hr {
+  width: 100%;
+  height: 2px;
+  margin: 1rem 0;
+  background-color: grey;
+  border: none;
+}
+
+@media (max-width: 992px) {
+  .logo .playtech_logo {
+    max-width: 80%;
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 20px;
+    gap: 15px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .links {
+    display: flex;
+    gap: 10px;
+  }
+
+  .links a {
+    font-size: 14px;
+  }
+
+  div.links {
+    display: none;
+  }
+
+  .logo .playtech_logo {
+    max-width: 60%;
+  }
+
+  .ham_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .ham_menu img {
+    width: 35px;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .footer-copyright {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  div.links {
+    display: none;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* alinea al final */
+    align-items: center;
+    padding-right: 1rem;
+  }
+
+  .ham_menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .ham_menu img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .logo .playtech_logo {
+    max-width: 100%;
+  }
+}
