@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Examen/Client/alta.css" />
+    <title>Examen</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/Examen/Client/index.html"
+          ><img
+            class="playtech_logo"
+            src="/Images/playtech.png"
+            alt="playtech_logo"
+        /></a>
+      </div>
+      <nav>
+        <div class="links">
+          <a href="/Examen/Client/index.html" class="nav-link">Inicio</a>
+          <a href="/Examen/Client/nosotros.html" class="nav-link">Nosotros</a>
+          <a href="/Examen/Client/contacto.html" class="nav-link">Contacto</a>
+        </div>
+        <div class="ham_menu">
+          <img src="/Images/menu_icon.svg" alt="hamburger_menu" />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="alta-section">
+        <h1>Alta de Productos</h1>
+        <p class="alta-subtitle">
+          Complete el formulario para agregar un nuevo producto al catálogo
+        </p>
+
+        <form class="alta-form">
+          <div class="form-group">
+            <label for="nombre">Nombre del Producto*</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+
+          <div class="form-group">
+            <label for="categoria">Categoría*</label>
+            <select id="categoria" name="categoria" required>
+              <option value="">Seleccione una categoría</option>
+              <option value="monitores">Monitores</option>
+              <option value="teclados">Teclados</option>
+              <option value="mouse">Mouse</option>
+              <option value="gabinetes">Gabinetes</option>
+              <option value="procesadores">Procesadores</option>
+              <option value="placas-video">Placas de Video</option>
+              <option value="ram">Memorias RAM</option>
+              <option value="almacenamiento">Almacenamiento</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="precio">Precio*</label>
+            <input
+              type="number"
+              id="precio"
+              name="precio"
+              min="0"
+              step="1"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="stock">Stock*</label>
+            <input type="number" id="stock" name="stock" min="0" required />
+          </div>
+
+          <div class="form-group">
+            <label for="imagen">Imagen del Producto*</label>
+            <input
+              type="file"
+              id="imagen"
+              name="imagen"
+              accept="image/jpeg, image/jpg, image/png, image/webp, image/svg"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="descripcion">Descripción*</label>
+            <textarea
+              id="descripcion"
+              name="descripcion"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="especificaciones">Especificaciones Técnicas</label>
+            <textarea
+              id="especificaciones"
+              name="especificaciones"
+              rows="4"
+            ></textarea>
+          </div>
+
+          <div class="buttons-container">
+            <button type="submit" class="btn-primary">Dar de Alta</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-content-left">
+          <h1>
+            <img
+              class="playtech_logo"
+              src="/Images/playtech.png"
+              alt="playtech_logo"
+            />
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            dolores commodi voluptatem excepturi magnam nihil inventore
+            temporibus numquam autem laudantium sunt iure nisi ad beatae
+            provident, voluptates explicabo earum quod.
+          </p>
+          <div class="footer-social-icons">
+            <img src="/Images/facebook_icon.png" alt="" />
+            <img src="/Images/twitter_icon.png" alt="" />
+            <img src="/Images/linkedin_icon.png" alt="" />
+          </div>
+        </div>
+        <div class="footer-content-center">
+          <h2>COMPAÑIA</h2>
+          <ul>
+            <li>Home</li>
+            <li>Nosotros</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+        <div class="footer-content-right">
+          <h2>CONTACTO</h2>
+          <ul>
+            <li>+5491123456789</li>
+            <li>examen@examen.com</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="footer-copyright">
+        Copyright 2025 © Examen.com - All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>
